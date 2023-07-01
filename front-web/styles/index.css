@@ -1,0 +1,89 @@
+#add-task{
+    font-size: 1.3rem;
+}
+
+#lista-tarefas{
+    margin-top: 20px;
+}
+
+.card{
+    background-color: var(--background-card-content);
+}
+
+.tarefa{
+    margin-bottom: 15px;   
+}
+
+.control-btns{
+    display: flex;
+    justify-content: end;
+}
+
+.control-btns button{
+    margin-left: 15px;
+}
+
+.toggle-btn{
+    margin-left: auto;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--background-color-hover);
+}
+
+.line:last-child{
+    border-bottom: none;
+}
+
+.feito{
+    margin-right: 10px;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.nome{
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+#popup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    
+    
+}
+
+#popup-body{
+    margin-top: 50px;
+    padding: 50px;
+    width: 500px;
+    min-height: 300px;
+    max-height: 500px;
+
+    border: 1px solid var(--border-modal); 
+    background-color: var(--bg-modal);
+    border-radius: 5px;
+    display: none;
+    
+}
+
+#task-description{
+    max-height: 250px;
+}
+

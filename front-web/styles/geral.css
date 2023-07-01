@@ -1,0 +1,51 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #2A2A2E;
+    --danger-color: #dc3545;
+    --background-color-hover: rgba(180, 180, 180, 0.2);
+    --background-card-content: #38383D;
+    --card-text: rgba(249, 249, 250, 0.8);
+    --border-modal: rgba(62, 72, 82, 1);
+    --bg-modal: rgba(67, 67, 64, 1);
+    --btn-outline-color: rgba(112, 176, 255, 0.9);
+    --btn-outline-bg: rgba(67, 67, 64, 0.2);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--card-text);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 30px; */
+}
+
+
+main{ 
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    margin-top: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-task{
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

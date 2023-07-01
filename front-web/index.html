@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/check.jpg" type="image/jpg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>Tasks</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1>Tasks</h1>
+            <button id="add-task" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </header>
+
+        <article id="lista-tarefas">
+        </article>
+    </main>
+    <article id="popup" class="">
+        <section id="popup-body" class="">
+            <h5>Nova tarefa</h5>
+            <form>
+                <input type="hidden" name="id-task" id="id-task">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="task-name" placeholder="Nome da tarefa" value="">
+                </div>
+                <br>
+                <!-- <div class="form-group"> -->
+                <textarea id="task-description" name="texto" placeholder="Descrição da tarefa" class="form-control" value=""></textarea>
+                <!-- </div> -->
+                <br>
+                <div class="form-group control-btns">
+                    <button id="cancelar-salvar" class="btn btn-secondary">Cancelar</button>
+                    <button id="salvar-tarefa" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </section>
+    </article>
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/d49239e0c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
